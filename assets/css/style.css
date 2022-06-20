@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body,
+html {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+.page {
+    height: 100vh;
+    position: relative;
+}
+
+.rounded {
+    box-shadow: 5px 10px 30px black;
+}
+
+.bg-alternate {
+    background-color: #f1f1f1;
+}
+
+/* Bloc Accueil */
+#home {
+    background-image: url("../img/fond.webp");
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+/* LOGO accueil */
+#logo {
+    max-width: 8em;
+    font-family: 'Abril Fatface', cursive;
+}
+
+/* Titre principal */
+.title {
+    font-size: 6rem;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 3px 3px 5px rgb(250, 11, 11);
+}
+
+/* Sous-titre */
+.subtitle {
+    font-size: 2.5rem;
+    color: #ff4b5a;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* DEBUT flÃ¨che sautante */
+.arrow {
+    width: 4rem;
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+.arrowBlock {
+    bottom: 0;
+}
+
+/* FIN FlÃ¨che sautante */
+/* Animation des blocs */
+.notLeft {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.fadeLeft {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.5s;
+}
+
+.notRight {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.fadeRight {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1.5s;
+}
+
+.animate:hover img {
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+/* Reglage titre partie */
+.blockTitle h2 {
+    font-size: 2rem;
+    margin: 10px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 2px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 2px 1px #919191,
+        1px 5px 1px #919191
+}
+
+.fontBtn {
+    font-size: 1rem;
+}
+
+/* Contact */
+.send {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color: #ff4b5a;
+    box-shadow: 0 10px 30px 0 rgb(255 75 90 / 50%);
+    border: 0;
+    animation: beatbtn 0.9s ease-in-out infinite;
+}
+
+/* FOOTER */
+footer {
+    height: auto;
+    background-color: #343a40;
+}
+
+.socialImg {
+    filter: grayscale(100);
+}
+
+footer p {
+    bottom: 2px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}

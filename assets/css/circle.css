@@ -1,0 +1,44 @@
+.progress-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: #FFF;
+    margin: 0 0 5px;
+}
+
+.progress {
+    height: 20px;
+    background: #FFF;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress .progress-bar {
+    position: relative;
+    overflow:visible;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    right: 10px;
+}
+
+.progress .progress-bar:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background:rgb(122, 6, 30);
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(25deg);
+}

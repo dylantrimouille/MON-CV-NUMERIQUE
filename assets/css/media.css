@@ -1,0 +1,55 @@
+:root{
+    font-size: 10px;
+}
+
+@media (min-width:768px) {
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1024px) {
+    :root{
+        font-size: 15px;
+    }
+}
+@media (min-width:1200px) {
+    :root{
+        font-size: 18px;
+    }
+}
+
+@keyframes bounce {
+
+    /* Animation sautante (flÃ¨che) */
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+
+@keyframes beatbtn {
+    0% {
+        background-color: #ff4b5a;
+        transform-origin: center;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1)
+    }
+
+    50% {
+        background-color: rgba(255, 75, 90, .8);
+        transform-origin: center;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
